@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after{box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{display: block;}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:#434455;
+    background: #FFF;
+}
+
+a{text-decoration: none;}
+
+li{list-style-type: none;}
+ul{margin: 0;
+padding: 0;}
+
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.cont-header-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-logo{
+    color: var(--IRIS, #4D5AE5);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-right: 76px;}
+
+
+.header-logo-line{
+    color: var(--NAVY-BLUE, #2E2F42);
+}
+.header-navigation{
+    display: flex;
+    gap: 40px;
+}
+
+
+.header-nav-list{
+    color: var( #2e2f42);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.address-item-list{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.header-studio-item{
+    color: #2e2f42; 
+    padding: 24px 0;
+    display: block;
+}
+
+
+.header-studio-item:hover, 
+.header-studio-item:focus{
+    color: #404bbf
+}
+.address-item:hover,
+.address-item:focus{
+    color: #404bbf
+}
+
+.address-link{
+    background: var(--WHITE, #FFF);
+}
+
+.address{font-style: normal;}
+.address-item{
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
+
+/*header end*/
+
+/*first section*/
+
+.hero-image{
+    background: var(--NAVY-BLUE, #2E2F42);
+    padding: 188px 0;
+}
+
+.hero-image-name{
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.button{
+    background: var(--IRIS, #4D5AE5);
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+.button-text{
+    color: var(--WHITE, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+.button:hover, .button:focus{background-color: #404BBF}
+
+/*seckond section*/
+.feature-li{flex-basis: calc((100% - 3 * 24px) / 4)}
+
+.strategy{
+    flex-shrink: 0;
+    background: #FFF;
+    padding: 120px 0;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.about-our-company, 
+.team-navigation{
+    display: flex;
+    gap: 24px;}
+        
+
+.strategy-list{
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+.strategy-list-item{
+    color: var(--SLATE, #434455);
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+}
+/*third section*/
+.team-card{width: calc((100% - 72px) / 4);}
+.title-team{
+    background: var(--CLOUD, #F4F4FD);
+    flex-shrink: 0;
+    padding: 120px 0;
+}
+.title-team-item{
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-card{
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.team-card-name{padding: 32px 0;
+}
+.team-card-mark {
+    background: url(<path-to-image>), lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
+}
+.team-card-list{
+    color: #2e2f42;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-align: center;
+margin-bottom: 8px
+}
+.team-card-list-item{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.team-card-tom {
+    background: url(<path-to-image>), lightgray -335.01px -22.055px / 256.162% 173.614% no-repeat;
+}
+
+.team-card-cam {
+    background: url(<path-to-image>), lightgray -128.784px -0.151px / 197.563% 133.752% no-repeat;
+}
+
+.team-card-dan {
+    background: url(<path-to-image>), lightgray -200px -7.128px / 251.515% 170.277% no-repeat;
+
+}
+
+/*fourth section*/
+
+.portfolio-company{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.portfolio-name{margin-bottom: 72px;}
+
+.portfolio-class{display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-class-list{width: calc((100% - 48px) / 3);}
+.portfolio-list-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px
+}
+.portfolio-class-list-link{padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
+}
+
+.portfolio-our-list{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
+/*footer*/
+
+.footer{
+background: var(--NAVY-BLUE, #2E2F42);
+flex-shrink: 0;
+padding: 100px 0;}
+
+.footer-logo{
+color: #4d5ae5;
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+display: inline-block;
+margin-bottom: 16px;
+}
+.footer-logo-line{color: #f4f4fd;
+}
+.footer-item-list{line-height: 1.5;
+letter-spacing: 0.02em;
+color: #F4F4FD;
+max-width: 264px;}
