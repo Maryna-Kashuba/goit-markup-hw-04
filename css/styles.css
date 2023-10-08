@@ -426,9 +426,9 @@ ul {
 .portfolio-class-list:hover{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-transform: translateY(0%);}
+}
 
-.portfolio-hiden:hover{transform: translateY(0%);}
+.portfolio-class-list:hover .portfolio-hiden{transform: translateY(0%);}
 
 .portfolio-class-list{
     width: calc((100% - 48px) / 3);
