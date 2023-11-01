@@ -99,13 +99,6 @@ ul {
     letter-spacing: 0.32px;
 }
 
-.address-item-list {
-    display: flex;
-    gap: 40px;
-}
-
-
-
 .header-studio-item {
     color: #2e2f42;
     padding: 24px 0;
@@ -113,20 +106,6 @@ ul {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
-.header-studio-item:hover,
-:focus {
-    color: #404bbf
-}
-
-.address-item:hover,
-.address-item:focus {
-    color: #404bbf
-}
-
 .current {
     position: relative;
     color: #404bbf;
@@ -143,6 +122,26 @@ ul {
     content: '';
 }
 
+
+
+.header-studio-item:hover,
+:focus {
+    color: #404bbf
+}
+.address {
+    font-style: normal;
+}
+.address-item-list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-item:hover,
+.address-item:focus {
+    color: #404bbf
+}
+
+
 .address-link {
     background: var(--WHITE, #FFF);
 }
@@ -157,9 +156,6 @@ ul {
     border-radius: 2px;
 }
 
-.address {
-    font-style: normal;
-}
 
 .address-item {
     color: var(--SLATE, #434455);
@@ -253,9 +249,6 @@ ul {
 }
 
 /*seckond section*/
-.feature-li {
-    flex-basis: calc((100% - 3 * 24px) / 4)
-}
 
 .strategy {
     flex-shrink: 0;
@@ -284,7 +277,9 @@ ul {
     gap: 24px;
 }
 
-
+.feature-li {
+    flex-basis: calc((100% - 3 * 24px) / 4)
+}
 .strategy-list {
     color: var(--NAVY-BLUE, #2E2F42);
     font-family: Roboto;
@@ -304,18 +299,11 @@ ul {
 }
 
 /*third section*/
-.team-card {
-    width: calc((100% - 72px) / 4);
-
-    border-radius: 0px 0px 4px 4px;
-}
-
 .title-team {
     background: var(--CLOUD, #F4F4FD);
     flex-shrink: 0;
     padding: 120px 0;
 }
-
 .title-team-item {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -327,6 +315,14 @@ ul {
     text-transform: capitalize;
     margin-bottom: 72px;
 }
+.team-card {
+    width: calc((100% - 72px) / 4);
+
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
 
 .team-card {
     justify-content: center;
@@ -439,7 +435,29 @@ ul {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
-
+.wrapper-imag-portfolio {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-hiden {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    padding: 40px 32px;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-class-list-link {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .portfolio-list-item {
     font-weight: 500;
     font-size: 20px;
@@ -450,11 +468,7 @@ ul {
     margin-bottom: 8px
 }
 
-.portfolio-class-list-link {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-}
+
 
 .portfolio-our-list {
     font-size: 16px;
@@ -466,23 +480,8 @@ ul {
 .portfolio-our-list:hover{transform: translateY(0%);}
 
 
-.wrapper-imag-portfolio{position: relative;
-overflow: hidden;
-}
 
-.portfolio-hiden{position: absolute;
-top: 0;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #f4f4fd;
-background-color: #4d5ae5;
-padding: 40px 32px;
-height: 100%;
-width: 100%;
-transform: translateY(100%);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 /*footer*/
 
 .footer {
@@ -490,7 +489,15 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
     padding: 100px 0;
 }
+.wrapp-foot {
+    display: flex;
+    align-items: baseline;
 
+}
+
+.wrapper-footer-logo {
+    margin-right: 120px
+}
 .footer-logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -523,7 +530,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
     margin-bottom: 16px;
 }
-
+.social-icons-foot {
+    display: flex;
+    gap: 16px;
+}
 .social-icon-lst {
     display: flex;
     justify-content: center;
@@ -533,20 +543,9 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 16px;
 }
 
-.wrapp-foot {
-    display: flex;
-    align-items: baseline;
 
-}
 
-.wrapper-footer-logo {
-    margin-right: 120px
-}
 
-.social-icons-foot {
-    display: flex;
-    gap: 16px;
-}
 
 .social-icon-lst-li {
     width: 100%;
